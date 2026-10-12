@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <title>FitSphere Fitness Navigation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 50px;
+            background-color: white;
+        }
+
+        nav {
+            background-color: #263b32;
+            display: flex;
+            align-items: center;
+            height: 65px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 22px 18px;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            background-color: #3f6b50;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 65px;
+            left: 0;
+            background-color: #263b32;
+            min-width: 150px;
+            flex-direction: column;
+            z-index: 1;
+        }
+
+        .dropdown a {
+            padding: 15px;
+        }
+
+        nav ul li:hover .dropdown {
+            display: flex;
+        }
+
+        .login {
+            background-color: #19a8e0;
+            margin: 8px;
+            padding: 0 !important;
+        }
+
+        .signup {
+            border: 1px solid #52665b;
+            margin: 8px;
+            padding: 0 !important;
+        }
+
+        .login a,
+        .signup a {
+            padding: 14px 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Workout ⌄</a>
+                <div class="dropdown">
+                    <a href="#">Strength Training</a>
+                    <a href="#">Cardio</a>
+                    <a href="#">Yoga</a>
+                </div>
+            </li>
+
+            <li>
+                <a href="#">Plans ⌄</a>
+                <div class="dropdown">
+                    <a href="#">Beginner</a>
+                    <a href="#">Professional</a>
+                    <a href="#">Premium</a>
+                </div>
+            </li>
+
+            <li>
+                <a href="#">Contact</a>
+            </li>
+
+            <li class="login">
+                <a href="#">Log In</a>
+            </li>
+
+            <li class="signup">
+                <a href="#">Sign Up</a>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+</html>
+
